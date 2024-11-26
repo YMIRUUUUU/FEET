@@ -1,0 +1,231 @@
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: rebeccapurple;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #023e8a;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #0077b6;
+    border-radius: 4px;
+}
+
+/* Section Accueil */
+/* Section Accueil */
+.hero {
+    position: relative;
+    background-image: url('images/fitness-hero.jpg'); /* Chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hauteur de la section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(8px); /* Ajustez l'intensité du flou ici */
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2; /* Met le texte au-dessus de l'image floutée */
+    color: #fff;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-overlay .btn {
+    padding: 10px 20px;
+    background-color: rgba(0, 119, 182, 0.8); /* Couleur transparente */
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-overlay .btn:hover {
+    background-color: rgba(0, 95, 135, 0.9);
+}
+
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Activités */
+.activities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.activity {
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.activity img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.activity h3 {
+    margin-top: 15px;
+}
+
+/* Tarifs */
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.plan .price {
+    font-size: 32px;
+    color: #0077b6;
+    margin: 20px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005f87;
+}
+
+/* Pied de page */
+footer {
+    background-color: #023e8a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

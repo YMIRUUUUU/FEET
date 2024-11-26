@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Feetness - Salle de Sport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="#accueil">Feetness</a>
+        </div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#activites">Nos Activités</a></li>
+            <li><a href="#tarifs">Tarifs et Offres</a></li>
+            <li><a href="#contact">Nous Contacter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="accueil">
+        <div class="hero">
+            <div class="hero-overlay">
+                <h1>Bienvenue chez Feetness</h1>
+                <p>Votre salle de sport dédiée à l'endurance et aux compétitions sportives.</p>
+                <a href="#tarifs" class="btn">Voir nos offres</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Activités -->
+    <section id="activites">
+        <h2>Nos Activités</h2>
+        <div class="activities">
+            <div class="activity">
+                <img src="images/cours-encadres.jpg" alt="Cours Encadrés">
+                <h3>Cours Encadrés</h3>
+                <p>Découvrez nos cours encadrés par des professionnels pour améliorer votre endurance.</p>
+            </div>
+            <div class="activity">
+                <img src="images/plateaux-autonomes.jpg" alt="Plateaux Autonomes">
+                <h3>Plateaux Autonomes</h3>
+                <p>Profitez de nos plateaux en accès libre pour vous entraîner à votre rythme.</p>
+            </div>
+            <div class="activity">
+                <img src="images/preparations-specifiques.jpg" alt="Préparations Spécifiques">
+                <h3>Préparations Spécifiques</h3>
+                <p>Programmes personnalisés pour vos objectifs sportifs et compétitions à venir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs et Offres -->
+    <section id="tarifs">
+        <h2>Tarifs et Offres</h2>
+        <div class="pricing">
+            <div class="plan">
+                <h3>Abonnement Mensuel</h3>
+                <p class="price">30€/mois</p>
+                <ul>
+                    <li>Accès illimité aux plateaux autonomes</li>
+                    <li>1 cours encadré par semaine</li>
+                    <li>Programme d'entraînement personnalisé</li>
+                </ul>
+                <a href="#" class="btn">Souscrire</a>
+            </div>
+            <div class="plan">
+                <h3>Abonnement Annuel</h3>
+                <p class="price">300€/an</p>
+                <ul>
+                    <li>Accès illimité aux plateaux autonomes</li>
+                    <li>3 cours encadrés par semaine</li>
+                    <li>Programme d'entraînement personnalisé</li>
+                    <li>Accès aux préparations spécifiques</li>
+                </ul>
+                <a href="#" class="btn">Souscrire</a>
+            </div>
+            <div class="plan">
+                <h3>Pass Journée</h3>
+                <p class="price">10€/jour</p>
+                <ul>
+                    <li>Accès aux plateaux autonomes</li>
+                    <li>1 cours encadré</li>
+                </ul>
+                <a href="#" class="btn">Acheter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nous Contacter -->
+    <section id="contact">
+        <h2>Nous Contacter</h2>
+        <form id="contact-form" action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 Feetness. Tous droits réservés.</p>
+        <p>
+            <a href="#mentions-legales">Mentions légales</a> | 
+            <a href="#politique-confidentialite">Politique de confidentialité</a> | 
+            <a href="#cookies">Gestion des cookies</a>
+        </p>
+    </footer>
+    
+    <!-- Section pour les mentions légales RGPD -->
+    <section id="mentions-legales">
+        <h2>Mentions légales</h2>
+        <p>
+            Éditeur : Feetness<br>
+            Adresse : 123 Rue de l'Endurance, 21000 Dijon, France<br>
+            Téléphone : +33 6 12 34 56 78<br>
+            Email : contact@feetness.fr<br>
+            Directeur de publication : [Nom du directeur]<br>
+            Hébergeur : [Nom de l’hébergeur], [Adresse de l’hébergeur], [Numéro de téléphone]
+        </p>
+    </section>
+    
+    <section id="politique-confidentialite">
+        <h2>Politique de confidentialité</h2>
+        <p>
+            Feetness s'engage à protéger vos données personnelles. Les informations recueillies via notre site sont utilisées uniquement 
+            pour répondre à vos demandes et améliorer nos services. Vous disposez d'un droit d'accès, de modification, et de suppression 
+            de vos données conformément à la réglementation RGPD. Pour exercer vos droits, contactez-nous à : 
+            <a href="mailto:contact@feetness.fr">contact@feetness.fr</a>.
+        </p>
+    </section>
+    
+    <section id="cookies">
+        <h2>Gestion des cookies</h2>
+        <p>
+            Ce site utilise des cookies pour améliorer votre expérience utilisateur. Vous pouvez accepter ou refuser l'utilisation des cookies 
+            via le bandeau de gestion des cookies affiché lors de votre première visite. Pour plus d'informations, consultez notre 
+            <a href="#politique-confidentialite">Politique de confidentialité</a>.
+        </p>
+    </section>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
